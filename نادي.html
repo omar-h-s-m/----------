@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>عروض جولف</title>
+    <link rel="stylesheet" href="styletwo.css">
+    <style>
+        /* تنسيق التفاصيل العامة للعروض */
+        .offer-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+            width: 100%;
+        }
+
+        /* تنسيق كل عرض */
+        .offer {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+        }
+
+        /* تحسين عرض الصور */
+        .offer img {
+            width: 100%; /* جعل الصورة تأخذ العرض الكامل */
+            height: 100vh; /* جعل الصورة تأخذ ارتفاع الشاشة الكامل */
+            object-fit: cover; /* الحفاظ على نسبة الأبعاد للصورة مع تغطية المساحة */
+            border-radius: 10px; /* حواف دائرية للصورة */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف للصورة */
+        }
+
+        .offer p {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* تأثير عند المرور على العرض */
+        .offer:hover {
+            transform: translateY(-10px); /* رفع العرض قليلاً عند المرور عليها */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* تأثير الظل عند المرور */
+        }
+
+        /* تنسيق النقاط في الفقرات */
+        ul {
+            list-style-type: disc; /* تحديد الشكل القياسي للنقاط */
+            padding-left: 20px; /* إضفاء مسافة بادئة للنقاط */
+        }
+
+        li {
+            margin-bottom: 10px; /* إضافة مسافة بين النقاط */
+        }
+    </style>
+</head>
+<script src="script.js"></script>
+
+<body dir="rtl">
+    <header>
+        <nav>
+            <a href="index.html">
+            <img src="imegs/logo.jpeg" class="logo" alt="شعار الموقع"></a>
+            <button class="menu-toggle" id="menuToggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <ul id="navMenu">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="ملاعب.html">الملاعب</a></li>
+                <li><a href="مطعم.html">مطاعم</a></li>
+                <li><a href="فندق.html">فنادق</a></li>
+                <li><a href="متجر.html">متجر</a></li>
+                <li><a href="حزم.html">حزم </a></li>
+                <li><a href="نادي.html">نادي</a></li>
+                <li><a href="اتصل بنا.html">اتصل بنا</a></li>
+                <li><a href="انشطة.html">انشطة</a></li>
+                <li><a href="خريطة الموقع.html">مخطط الموقع</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>اكتشف نوادي جولف مميزة</h1>
+        <p>استمتع بتجربة جولف لا مثيل لها في أفضل النوادي مع ملاعب رائعة وأجواء استثنائية.</p>
+        
+        <!-- تفاصيل النوادي -->
+        <section class="offer-container">
+            <!-- تفاصيل النادي الأول -->
+            <div class="offer">
+                <img src="imegs/نادي 1.jpg" alt="نادي 1">
+                <p><strong>نادي الجولف الأول - نادي الغروب</strong></p>
+                <p>نادي الغروب هو وجهة مثالية لعشاق الجولف، مع ملعب واسع مصمم بأحدث الأساليب، يضم 18 حفرة. يقدم النادي أجواءً مريحة ومتنوعة مع خدمات ممتازة ومرافق مريحة.</p>
+                <ul>
+                    <li>ملعب جولف بطول 18 حفرة مصمم لجميع المستويات.</li>
+                    <li>تدريب احترافي من مدربين معتمدين لرفع مستوى مهاراتك.</li>
+                    <li>إطلالات ساحرة على البحيرات والطبيعة المحيطة.</li>
+                    <li>إقامة فاخرة مع خدمات فندقية عالية الجودة.</li>
+                    <li>مرافق متعددة منها المطاعم والمقاهي لتناول وجبات لذيذة أثناء الاستراحة.</li>
+                </ul>
+            </div>
+            <!-- تفاصيل النادي الثاني -->
+            <div class="offer">
+                <img src="imegs/نادي 11.jpg" alt="نادي 2">
+                <p><strong>نادي الجولف الثاني - نادي المروج</strong></p>
+                <p>نادي المروج هو النادي المثالي للمحترفين والمبتدئين على حد سواء. يتميز بملعب رائع يوفر تحديات للاعبين وراحة في نفس الوقت. يحيط بالنادي مناظر خلابة من الحدائق والمناظر الطبيعية.</p>
+                <ul>
+                    <li>ملعب جولف احترافي يضم 18 حفرة بمواصفات عالمية.</li>
+                    <li>مرافق تدريب متطورة تشمل أجهزة محاكاة ومجالات واسعة.</li>
+                    <li>إطلالات مذهلة على حدائق النادي والأنهار.</li>
+                    <li>خدمة احترافية من المدربين المتخصصين لتحسين مهاراتك.</li>
+                    <li>مطاعم تقدم أشهى المأكولات المحلية والعالمية.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>تواصل معنا</p>
+        <div class="social-media">
+            <a href="#"><img src="imegs/insta.png" alt="Instagram"></a>
+            <a href="#"><img src="imegs/fb.png" alt="Facebook"></a>
+            <a href="#"><img src="imegs/twitter.webp" alt="Twitter"></a>
+        </div>
+        <p>تابع صفحتنا</p>
+    </footer>
+</body>
+</html>

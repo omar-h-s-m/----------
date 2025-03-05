@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>اتصل بنا</title>
+    <link rel="stylesheet" href="styletwo.css">
+    <script src="script.js"></script>
+    <style>
+        /* تنسيق النموذج */
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .success-message {
+            font-size: 18px;
+            color: green;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<script>
+    // دالة لإظهار رسالة "تم الإرسال"
+    function showSuccessMessage(event) {
+        event.preventDefault(); // منع إعادة تحميل الصفحة عند إرسال النموذج
+        document.getElementById('contact-form').style.display = 'none'; // إخفاء النموذج
+        document.getElementById('success-message').style.display = 'block'; // إظهار رسالة النجاح
+    }
+</script>
+
+<body dir="rtl">
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="imegs/logo.jpeg" class="logo" alt="شعار الموقع">
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <ul id="navMenu">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="ملاعب.html">الملاعب</a></li>
+                <li><a href="مطعم.html">مطاعم</a></li>
+                <li><a href="فندق.html">فنادق</a></li>
+                <li><a href="متجر.html">متجر</a></li>
+                <li><a href="حزم.html">حزم </a></li>
+                <li><a href="نادي.html">نادي</a></li>
+                <li><a href="اتصل بنا.html">اتصل بنا</a></li>
+                <li><a href="انشطة.html">انشطة</a></li>
+                <li><a href="خريطة الموقع.html">مخطط الموقع</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <h1>اتصل بنا</h1>
+            <p>إذا كنت بحاجة إلى مساعدة أو لديك أي استفسارات، لا تتردد في التواصل معنا. نحن هنا للمساعدة!</p>
+
+            <!-- نموذج الاتصال -->
+            <form id="contact-form" onsubmit="showSuccessMessage(event)">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">رسالتك</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <input type="submit" value="إرسال">
+            </form>
+
+            <!-- رسالة تم الإرسال -->
+            <div id="success-message" class="success-message" style="display:none;">
+                <p>تم إرسال رسالتك بنجاح! شكراً لتواصلك معنا.</p>
+            </div>
+        </div>
+    </main>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+   <p> تواصل معنا </p>
+        <div class="social-media">
+            <a href="#"><img src="imegs/insta.png" alt="Instagram"></a>
+            <a href="#"><img src="imegs/fb.png" alt="Facebook"></a>
+            <a href="#"><img src="imegs/twitter.webp" alt="Twitter"></a>
+        </div>
+        <p>تابع صفحتنا </p>

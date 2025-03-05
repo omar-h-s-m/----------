@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>حزم وعروض جولف</title>
+    <link rel="stylesheet" href="styletwo.css">
+    <style>
+        /* تنسيق الحزم لتكون مرنة وتتكيف مع حجم الشاشة */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap; /* السماح بتوزيع الحزم على عدة أسطر */
+            gap: 20px; /* المسافة بين العناصر */
+            justify-content: center; /* لضبط الحزم في وسط الصفحة */
+            padding: 20px;
+            margin: 0;
+            width: 100%; /* تأكد من استخدام عرض كامل */
+        }
+
+        /* تنسيق كل بطاقة */
+        .card {
+            flex: 1 1 calc(33.333% - 20px); /* تجعل كل بطاقة مرنة مع تحديد الحد الأدنى للعرض */
+            max-width: 400px; /* تحديد الحد الأقصى للعرض */
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px; /* تحديد ارتفاع ثابت لجميع الصور */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #333;
+            flex-grow: 1; /* تجعل النص يملأ الفراغ المتبقي في البطاقة */
+        }
+
+        /* تأثير عند المرور على البطاقة */
+        .card:hover {
+            transform: translateY(-10px); /* رفع البطاقة قليلاً عند المرور عليها */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* تأثير الظل عند المرور */
+        }
+
+        /* تنسيق عند الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            .card-container {
+                flex-direction: column; /* جعل الحزم تظهر في عمود واحد */
+                align-items: center; /* لضبط الحزم في منتصف الصفحة */
+            }
+
+            .card {
+                flex: 1 1 100%; /* جعل الحزم تأخذ عرض كامل على الشاشات الصغيرة */
+                max-width: none; /* إزالة الحد الأقصى للعرض */
+            }
+        }
+
+        /* تنسيق النقاط في الفقرات */
+        ul {
+            list-style-type: disc; /* تحديد الشكل القياسي للنقاط */
+            padding-left: 20px; /* إضفاء مسافة بادئة للنقاط */
+        }
+
+        li {
+            margin-bottom: 10px; /* إضافة مسافة بين النقاط */
+        }
+    </style>
+</head>
+<script src="script.js"></script>
+
+<body dir="rtl">
+    <header>
+        <nav>
+            <a href="index.html">
+            <img src="imegs/logo.jpeg" class="logo" alt="شعار الموقع"></a>
+            <button class="menu-toggle" id="menuToggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <ul id="navMenu">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="ملاعب.html">الملاعب</a></li>
+                <li><a href="مطعم.html">مطاعم</a></li>
+                <li><a href="فندق.html">فنادق</a></li>
+                <li><a href="متجر.html">متجر</a></li>
+                <li><a href="حزم.html">حزم </a></li>
+                <li><a href="نادي.html">نادي</a></li>
+                <li><a href="اتصل بنا.html">اتصل بنا</a></li>
+                <li><a href="انشطة.html">انشطة</a></li>
+                <li><a href="خريطة الموقع.html">مخطط الموقع</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>اكتشف حزم وعروض جولف متكاملة</h1>
+        <p>في هذه الصفحة، نقدم لك حزم جولف مميزة مع عروض وخصومات خاصة. اغتنم الفرصة للحصول على أفضل العروض</p>
+        
+        <!-- حزم الجولف على شكل بطاقات -->
+        <section class="card-container">
+            <!-- حزمة 1 -->
+            <div class="card">
+                <img src="imegs/حزمة خمس جولات.jpg"حزمة 1 - عصي جولف">
+                <p>خمس جوالات:</p>
+                <ul>
+                    <li>إقامة كاملة لمدة خمس ليالي في جناح فاخر</li>
+                    <li>خمس جوالات - 18 حفرة</li>
+                    <li>جولة واحدة مضمونة في ملعب "سي فيو" الشهير</li>
+                    <li>جلسة تدريب رقمية مجانية</li>
+                    <li>الجولة الثالثية (tee Triple):</li>
+                    <ul>
+                        <li>إقامة لمدة ليلتين في غرفة مزدوجة مع وجبة إفطار</li>
+                        <li>ثلاث جوالات - 18 حفرة، تشمل خوض جولة واحدة في ملعب "سي فيو" الشهير (إن وجدت)</li>
+                        <li>تأجير مجاني للعربات</li>
+                        <li>خصم 20% لمتجر المحترفين</li>
+                    </ul>
+                </ul>
+            </div>
+            <!-- حزمة 2 -->
+            <div class="card">
+                <img src="imegs/حزمة ثلاثية.jfif" alt="حزمة 2 - شناتي جولف">
+                <p>الجولة الثالثية (tee Triple):</p>
+                <ul>
+                    <li>إقامة لمدة ليلتين في غرفة مزدوجة مع وجبة إفطار</li>
+                    <li>ثلاث جوالات - 18 حفرة، تشمل خوض جولة واحدة في ملعب "سي فيو" الشهير (إن وجدت)</li>
+                    <li>تأجير مجاني للعربات</li>
+                    <li>خصم 20% لمتجر المحترفين</li>
+                </ul>
+            </div>
+            <!-- حزمة 3 -->
+            <div class="card">
+                <img src="imegs/استجمام.jpg" alt="حزمة 3 - قفازات جولف">
+                <p>استراحة استجمام:</p>
+                <ul>
+                    <li>إقامة لليلة واحدة مع وجبة إفطار كاملة</li>
+                    <li>تناول العشاء في أي من مطاعم المنتجع</li>
+                    <li>الوصول إلى الملاعب (تطبق الرسوم ويستبعد ملعب "سي فيو")</li>
+                    <li>تأجير نادي مجاني</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>تواصل معنا</p>
+        <div class="social-media">
+            <a href="#"><img src="imegs/insta.png" alt="Instagram"></a>
+            <a href="#"><img src="imegs/twitter.webp" alt="Twitter"></a>
+            <a href="#"><img src="imegs/fb.png" alt="Facebook"></a>
+        </div>
+        <p>تابع صفحتنا</p>
+    </footer>
+</body>
+</html>

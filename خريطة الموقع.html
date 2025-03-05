@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>عروض جولف</title>
+    <link rel="stylesheet" href="styletwo.css">
+    <style>
+        /* تنسيق التفاصيل العامة للعروض */
+        .offer-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            margin: 0;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* تنسيق كل عرض */
+        .offer {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+        }
+
+        /* تحسين عرض الصور */
+        .offer img {
+            max-width: 500px
+            ; /* جعل الصورة تأخذ العرض الكامل */
+            height: 70%; /* جعل الصورة تأخذ ارتفاع الشاشة الكامل */
+            object-fit: cover; /* الحفاظ على نسبة الأبعاد للصورة مع تغطية المساحة */
+            border-radius: 10px; /* حواف دائرية للصورة */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف للصورة */
+        }
+
+        
+
+        
+        
+
+        
+    </style>
+</head>
+<script src="script.js"></script>
+
+<body dir="rtl">
+    <header>
+        <nav>
+            <a href="index.html">
+            <img src="imegs/logo.jpeg" class="logo" alt="شعار الموقع"></a>
+            <button class="menu-toggle" id="menuToggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <ul id="navMenu">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="ملاعب.html">الملاعب</a></li>
+                <li><a href="مطعم.html">مطاعم</a></li>
+                <li><a href="فندق.html">فنادق</a></li>
+                <li><a href="متجر.html">متجر</a></li>
+                <li><a href="حزم.html">حزم </a></li>
+                <li><a href="نادي.html">نادي</a></li>
+                <li><a href="اتصل بنا.html">اتصل بنا</a></li>
+                 <li><a href="انشطة.html">انشطة</a></li>
+                <li><a href="خريطة الموقع.html">مخطط الموقع</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>اذا واجهت اي مشكلة تتبع الخريطة</h1>
+        <p></p>
+        
+      
+        <section class="offer-container">
+            
+            <div class="offer">
+                <img src="imegs/مخطط الشبكة.png" alt="نادي 1">
+                
+            </div>
+        </section>
+<br> <br> <br> <br>
+    <footer>
+        <p>تواصل معنا</p>
+        <div class="social-media">
+            <a href="#"><img src="imegs/insta.png" alt="Instagram"></a>
+            <a href="#"><img src="imegs/fb.png" alt="Facebook"></a>
+            <a href="#"><img src="imegs/twitter.webp" alt="Twitter"></a>
+        </div>
+        <p>تابع صفحتنا</p>
+    </footer>
+</body>
+</html>

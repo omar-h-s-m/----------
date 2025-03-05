@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>أنشطة جولف</title>
+    <link rel="stylesheet" href="styletwo.css">
+    <script src="script.js"></script>
+    <style>
+        .activities-container {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .activities-list {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .activities-list li {
+            margin-bottom: 20px; /* زيادة المسافة بين العناصر */
+            display: flex;
+            align-items: center;
+        }
+
+        .activities-list img {
+            width: 100px;  /* حجم الصورة مناسب */
+            height: 100px; /* تعديل الارتفاع ليكون متناسق */
+            margin-right: 20px; /* المسافة بين الصورة والنص */
+            object-fit: cover; /* الحفاظ على تناسق الصورة */
+            border-radius: 8px; /* إضافة حواف دائرية للصورة */
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="imegs/logo.jpeg" class="logo" alt="شعار الموقع">
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <ul id="navMenu">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="ملاعب.html">الملاعب</a></li>
+                <li><a href="مطعم.html">مطاعم</a></li>
+                <li><a href="فندق.html">فنادق</a></li>
+                <li><a href="متجر.html">متجر</a></li>
+                <li><a href="حزم.html">حزم </a></li>
+                <li><a href="نادي.html">نادي</a></li>
+                <li><a href="اتصل بنا.html">اتصل بنا</a></li>
+                <li><a href="انشطة.html">انشطة</a></li>
+                <li><a href="خريطة الموقع.html">مخطط الموقع</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="activities-container">
+            <h2>أنشطة جولف مميزة</h2>
+            <ul class="activities-list">
+                <li><img src="imegs/جولف ليل.jfif" alt="ساحة تدريب"> ساحة تدريب مُضاءة بالأضواء الكاشفة</li>
+                <li><img src="imegs/دروس.avif" alt="دروس الجولف"> دروس الجولف للمبتدئين والمحترفين</li>
+                <li><img src="imegs/محاكاة.jpg" alt="التدريب الرقمي"> التدريب الرقمي باستخدام تقنيات متقدمة</li>
+                <li><img src="imegs/سيارة.jfif" alt="مساعدة حمل الأدوات"> خدمة المساعدة على حمل أدوات الجولف</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>تواصل معنا </p>
+        <div class="social-media">
+            <a href="#"><img src="imegs/insta.png" alt="Instagram"></a>
+            <a href="#"><img src="imegs/fb.png" alt="Facebook"></a>
+            <a href="#"><img src="imegs/twitter.webp" alt="Twitter"></a>
+        </div>
+        <p>تابع صفحتنا</p>
+    </footer>
+</body>
+</html>
